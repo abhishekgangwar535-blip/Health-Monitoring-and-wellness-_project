@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A simple health guide to common symptoms, local care, and doctor appointments.">
+  <title>Health Monitoring and wellness — Your health, in one place</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Wellnest home"><span class="brand-mark">✳</span>Health Monitoring<br>and wellness</a>
+    <nav aria-label="Main navigation">
+      <a href="#guide">Health guide</a><a href="#hospitals">Find care</a><a href="#appointment">Appointments</a>
+    </nav>
+    <a class="header-cta" href="#appointment">Book a visit <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="home">
+    <section class="hero page-wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse-dot"></span> CARE THAT FEELS CLOSER</div>
+        <h1>Your health,<br>in <em>good hands.</em></h1>
+        <p class="hero-intro">A calmer way to find trusted care. Explore everyday health guidance, nearby hospitals, and the right doctor for you.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#hospitals">Explore care <span>→</span></a><a class="text-link" href="#guide">Browse health guide <span>↓</span></a></div>
+        <div class="trust-row"><div class="avatar-stack"><span>R</span><span>A</span><span>M</span><b>+</b></div><div><strong>Care for every day</strong><small>Thoughtful help, when you need it</small></div></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a doctor offering care" role="img">
+        <div class="sun-orb"></div><div class="art-note note-top"><span>✦</span> Your wellbeing matters</div>
+        <div class="plant plant-left"><i></i><i></i><i></i><b></b></div>
+        <div class="doctor-illustration"><div class="hair"></div><div class="head"><div class="eye eye1"></div><div class="eye eye2"></div><div class="smile"></div></div><div class="neck"></div><div class="coat"><div class="shirt"></div><div class="lapel l1"></div><div class="lapel l2"></div><div class="pocket">✚</div></div><div class="arm"></div><div class="stethoscope"></div></div>
+        <div class="art-note note-bottom"><span class="cross">✚</span><div><b>Here for you</b><small>One step at a time</small></div></div>
+        <div class="plant plant-right"><i></i><i></i><i></i><b></b></div>
+      </div>
+    </section>
+    <section class="quick-links page-wrap" aria-label="Explore services">
+      <a href="#guide"><span class="quick-icon mint">♡</span><span><b>Health guide</b><small>Simple everyday info</small></span><i>↗</i></a>
+      <a href="#hospitals"><span class="quick-icon peach">⌖</span><span><b>Nearby hospitals</b><small>Public &amp; private care</small></span><i>↗</i></a>
+      <a href="#appointment"><span class="quick-icon lavender">＋</span><span><b>Doctor visits</b><small>Plan your next check-in</small></span><i>↗</i></a>
+    </section>
+    <section class="section page-wrap" id="guide">
+      <div class="section-heading"><div><div class="eyebrow">A LITTLE KNOW-HOW</div><h2>Everyday health,<br><em>made clearer.</em></h2></div><p>Helpful starting points for common concerns. Always check with a qualified clinician for advice tailored to you.</p></div>
+      <h3 class="subsection-title">Common viral illnesses</h3>
+      <div class="guide-grid illness-grid">
+        <article class="guide-card fever-card"><div class="card-top"><span class="card-icon">🌡</span><span class="tag">VIRAL INFECTION</span></div><h3>Flu (influenza)</h3><p>Often starts suddenly with fever, aches, tiredness, headache, and cough. Higher-risk people should contact a clinician early.</p><a href="https://www.cdc.gov/flu/signs-symptoms/">CDC symptoms &amp; warning signs ↗</a><div class="card-decoration fever-sun">✳</div></article>
+        <article class="guide-card cold-card"><div class="card-top"><span class="card-icon">☁</span><span class="tag">VIRAL INFECTION</span></div><h3>COVID-19</h3><p>May cause cough, sore throat, fever, fatigue, or breathing symptoms. Symptoms overlap with flu and other infections.</p><a href="https://www.cdc.gov/covid/signs-symptoms/">CDC symptoms ↗</a><div class="card-decoration cloud">◡</div></article>
+        <article class="guide-card stomach-card"><div class="card-top"><span class="card-icon">✿</span><span class="tag">VIRAL INFECTION</span></div><h3>Dengue</h3><p>Fever with aches, headache, nausea, or rash may occur where dengue circulates. Warning signs can appear as fever settles.</p><a href="https://www.cdc.gov/dengue/signs-symptoms/">CDC warning signs ↗</a><div class="card-decoration stomach-flower">✿</div></article>
+        <article class="guide-card cold-card"><div class="card-top"><span class="card-icon">❋</span><span class="tag">VIRAL INFECTION</span></div><h3>Common cold</h3><p>Usually brings a gradual runny or stuffy nose, sneezing, and sore throat. Get care if symptoms worsen or persist.</p><a href="https://www.cdc.gov/common-cold/treatment/">CDC care guidance ↗</a><div class="card-decoration cloud">◡</div></article>
+        <article class="guide-card stomach-card"><div class="card-top"><span class="card-icon">◌</span><span class="tag">VIRAL INFECTION</span></div><h3>Viral stomach bug</h3><p>Vomiting or diarrhea can lead to dehydration. Offer frequent small sips; seek help if fluids cannot be kept down.</p><a href="https://www.cdc.gov/norovirus/about/">CDC norovirus overview ↗</a><div class="card-decoration stomach-flower">✿</div></article>
+        <article class="guide-card fever-card"><div class="card-top"><span class="card-icon">♡</span><span class="tag">VIRAL INFECTION</span></div><h3>RSV</h3><p>Often resembles a cold, but can be serious for infants, older adults, and people with certain conditions.</p><a href="https://www.cdc.gov/rsv/symptoms/">CDC symptoms &amp; care ↗</a><div class="card-decoration fever-sun">✳</div></article>
+      </div>
+      <p class="guide-caveat">Symptoms overlap and this guide cannot identify the cause. Local risks vary; a clinician may need to test or examine you.</p>
+      <div class="checkup-heading"><div><div class="eyebrow">KNOW YOUR NUMBERS</div><h3 class="subsection-title">Simple health checks</h3></div><p>Ranges below are general adult references. Age, pregnancy, medicines, altitude, health conditions, and your usual baseline can change what is right for you.</p></div>
+      <div class="checkup-table-wrap"><table class="checkup-table"><thead><tr><th>Check</th><th>General adult reference</th><th>When to get help</th></tr></thead><tbody>
+        <tr><th>Blood pressure</th><td>Under 120/80 mmHg is normal; 130/80 or higher is in a high range.</td><td>Repeated high readings: arrange a clinician review. Above 180 systolic and/or 120 diastolic: repeat after 1 minute. If still high, contact a clinician promptly; with chest pain, breathlessness, weakness, vision or speech changes, call emergency services.</td></tr>
+        <tr><th>Temperature</th><td>Fever is commonly 38°C (100.4°F) or higher; method and age matter.</td><td>Adult fever over 39.4°C (103°F) that persists/rises, or lasts over 48–72 hours: contact a clinician. Emergency symptoms include confusion, trouble breathing, stiff neck, seizure, or difficulty waking. Any fever in an infant under 3 months needs prompt medical advice.</td></tr>
+        <tr><th>Resting pulse</th><td>Usually 60–100 beats per minute for a resting adult.</td><td>Repeated unusual readings with fainting, chest pain, breathlessness, severe weakness, or confusion need urgent assessment. Athletes and some medicines can change baseline.</td></tr>
+        <tr><th>Oxygen (if measured)</th><td>Many healthy people read 95–100% at sea level; personal baselines and altitude vary.</td><td>Repeat a low reading with warm hands and stillness. Persistent 92% or lower, or any severe breathlessness/blue lips, needs emergency care. Follow your clinician's personal plan if you have chronic lung disease.</td></tr>
+      </tbody></table></div>
+      <aside class="safety-note" id="safety"><span class="safety-icon">!</span><div><b>Know when it may be serious</b><p>Seek emergency help for severe trouble breathing, blue lips, chest pain, fainting, confusion, seizure, inability to wake, severe dehydration, heavy bleeding, or rapidly worsening symptoms. With possible dengue, urgent warning signs include severe belly pain, repeated vomiting, nose/gum bleeding, blood in vomit or stool, or extreme tiredness/restlessness—especially as fever goes away. Do not wait for a number to become severe if you feel seriously unwell.</p></div></aside>
+      <aside class="safety-note medicine-note"><span class="safety-icon">i</span><div><b>Medicine safety comes first</b><p>There is no one-size-fits-all medicine for viral fever. Ask a clinician or pharmacist what is appropriate for age, symptoms, pregnancy, conditions, and other medicines. If dengue is possible, avoid aspirin and ibuprofen unless a clinician specifically directs you; these may increase bleeding risk. Never give aspirin to children or teenagers with a viral illness.</p></div></aside>
+      <p class="source-line">Reference sources: <a href="https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings">American Heart Association blood pressure guide</a> · <a href="https://medlineplus.gov/ency/article/003090.htm">MedlinePlus fever guidance</a> · <a href="https://www.medlineplus.gov/ency/article/002341.htm">MedlinePlus vital signs</a> · <a href="https://www.england.nhs.uk/coronavirus/documents/covid-19-standard-operating-procedure-covid-oximetry-home/">NHS oxygen monitoring guidance</a> · <a href="https://www.cdc.gov/dengue/hcp/clinical-care/">CDC dengue guidance</a>.</p>
+    </section>
+    <section class="hospital-section" id="hospitals"><div class="page-wrap hospital-inner">
+      <div class="section-heading"><div><div class="eyebrow">CARE AROUND YOU</div><h2>Find a place<br>to <em>feel better.</em></h2></div><p>Compare public and private care options near you. Add your location to make this directory yours.</p></div>
+      <div class="location-bar"><span class="location-pin">⌖</span><div><small>YOUR LOCATION</small><strong>Choose your city or area</strong></div><a href="#hospital-list">Browse options <span>→</span></a></div>
+      <div class="hospital-grid" id="hospital-list">
+        <article class="hospital-card"><div class="hospital-art public-art"><span class="building">✚</span><span class="art-label">PUBLIC HEALTHCARE</span><i>✳</i></div><div class="hospital-info"><div class="hospital-type">GOVERNMENT HOSPITAL</div><h3>District General Hospital</h3><p>Public emergency and outpatient services</p><div class="hospital-meta"><span>◷ Check local hours</span><span>◎ Location varies</span></div><a href="#appointment" class="outline-link">View care options <span>→</span></a></div></article>
+        <article class="hospital-card"><div class="hospital-art private-art"><span class="building">✚</span><span class="art-label">PRIVATE HEALTHCARE</span><i>✦</i></div><div class="hospital-info"><div class="hospital-type private-type">PRIVATE HOSPITAL</div><h3>City Care Medical Centre</h3><p>Specialist consultations and diagnostics</p><div class="hospital-meta"><span>◷ Check local hours</span><span>◎ Location varies</span></div><a href="#appointment" class="outline-link">View care options <span>→</span></a></div></article>
+      </div><p class="directory-note">Sample listings for this demo. Confirm facilities, hours, availability, and costs directly with hospitals. In an emergency, contact your local emergency service.</p>
+    </div></section>
+    <section class="section appointment-section page-wrap" id="appointment"><div class="appointment-copy"><div class="eyebrow">YOUR NEXT STEP</div><h2>Make time for<br><em>your health.</em></h2><p>Appointments start with a conversation. Choose the kind of care you need and contact a local provider to confirm availability.</p><div class="appointment-points"><span><b>01</b> Pick a care type</span><span><b>02</b> Find a local provider</span><span><b>03</b> Confirm directly</span></div></div>
+      <form class="appointment-form" action="mailto:appointments@example.com" method="post" enctype="text/plain"><div class="form-head"><span class="form-icon">＋</span><div><h3>Plan a visit</h3><p>Share a few details to get started.</p></div></div><label for="name">Your name</label><input id="name" name="name" type="text" placeholder="e.g. Alex Morgan" required><div class="form-row"><div><label for="visit">Type of visit</label><select id="visit" name="visit"><option>General consultation</option><option>Follow-up</option><option>Specialist consultation</option><option>Not sure yet</option></select></div><div><label for="date">Preferred date</label><input id="date" name="date" type="date"></div></div><label for="area">Your city or area</label><input id="area" name="area" type="text" placeholder="Enter your location"><button class="button button-dark submit-button" type="submit">Request an appointment <span>→</span></button><small class="form-foot">Demo form: contact details and availability must be confirmed with a provider.</small></form>
+    </section>
+  </main>
+  <footer><div class="page-wrap footer-inner"><a class="brand" href="#home"><span class="brand-mark">✳</span>Health Monitoring<br>and wellness</a><span>Care starts with a better next step.</span><a href="#home">Back to top ↑</a></div><div class="page-wrap footer-small">General information only. This page is not a substitute for professional medical advice.</div></footer>
+</body>
+</html>

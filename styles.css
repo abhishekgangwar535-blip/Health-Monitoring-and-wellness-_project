@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--ink:#203a36;--muted:#697d77;--green:#e8f1ed;--mint:#d8e9df;--coral:#f4a78f;--cream:#fbfaf6;--line:#e7e9e2;--serif:Georgia,'Times New Roman',serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:var(--ink);font-family:'DM Sans',sans-serif;font-size:15px}
+a{color:inherit;text-decoration:none}
+.page-wrap{width:min(1120px,calc(100% - 64px));margin-inline:auto}
+.site-header{height:84px;display:flex;align-items:center;justify-content:space-between;width:min(1240px,calc(100% - 64px));margin:auto;border-bottom:1px solid #eff0eb}
+.brand{display:inline-flex;align-items:center;gap:9px;font:800 21px Manrope,sans-serif;letter-spacing:-1px}
+.brand-mark{display:grid;place-items:center;width:30px;height:30px;background:#dcebe2;color:#4b8a6c;border-radius:50%;font-size:20px}
+.site-header nav{display:flex;gap:38px;color:#62736e;font-size:13px}
+.site-header nav a:hover,.text-link:hover{color:#35805e}
+.header-cta{font-size:13px;font-weight:700;background:var(--ink);color:white;padding:13px 19px;border-radius:8px}
+.header-cta span{padding-left:10px;color:#b6d8c4}.hero{min-height:560px;display:grid;grid-template-columns:1fr 1.03fr;align-items:center;gap:40px;padding-top:35px;padding-bottom:45px}
+.eyebrow{font-size:10px;letter-spacing:1.8px;font-weight:700;color:#55836d}
+.pulse-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#6cb688;margin-right:8px;box-shadow:0 0 0 4px #e5f2e9}
+h1,h2,h3,p{margin-top:0}
+h1{font:600 clamp(52px,6vw,76px)/1.03 Manrope,sans-serif;letter-spacing:-4px;margin:22px 0 19px}
+h1 em,h2 em{font-family:var(--serif);font-weight:400;color:#6e9a7c;letter-spacing:-2px}
+.hero-intro{max-width:445px;color:var(--muted);font-size:15px;line-height:1.8}
+.hero-actions{display:flex;align-items:center;gap:23px;margin-top:27px}
+.button{display:inline-flex;align-items:center;justify-content:center;border:0;cursor:pointer;font:700 13px 'DM Sans';border-radius:8px;padding:15px 21px}
+.button-dark{background:var(--ink);color:white}
+.button-dark span{margin-left:22px;color:#b6d8c4;font-size:17px}
+.text-link{font-size:12px;font-weight:700;color:#426456}.text-link span{padding-left:7px}
+.trust-row{margin-top:42px;display:flex;align-items:center;gap:14px}
+.trust-row strong,.trust-row small{display:block}
+.trust-row strong{font-size:12px}
+.trust-row small{font-size:11px;color:#8a9a94;margin-top:4px}
+.avatar-stack{display:flex;padding-left:2px}
+.avatar-stack span,.avatar-stack b{margin-left:-5px;border:2px solid white;border-radius:50%;height:29px;width:29px;display:grid;place-items:center;font-size:10px;font-weight:700;background:#e8c7af;color:#4d5147}
+.avatar-stack span:nth-child(2){background:#b9d4c6}
+.avatar-stack span:nth-child(3){background:#e4d8a9}
+.avatar-stack b{background:#edf3ee;color:#528064}
+.hero-art{height:460px;position:relative;border-radius:48% 48% 14px 14px;background:#eef5f0;overflow:hidden;display:flex;align-items:end;justify-content:center}
+.sun-orb{position:absolute;width:230px;height:230px;border-radius:50%;background:#f7d9bd;right:7%;top:38px}
+.doctor-illustration{position:relative;width:255px;height:355px;margin-bottom:-5px;z-index:2}
+.head{position:absolute;z-index:3;width:120px;height:140px;top:35px;left:68px;background:#d69772;border-radius:48% 48% 43% 45%}
+.hair{position:absolute;z-index:4;width:132px;height:93px;top:20px;left:61px;background:#283b35;border-radius:58% 50% 28% 30%;transform:rotate(-3deg)}
+.hair:after{content:'';position:absolute;width:42px;height:70px;background:#283b35;right:-4px;top:50px;border-radius:5px 20px 25px 20px;transform:rotate(-8deg)}
+.neck{position:absolute;z-index:2;width:42px;height:48px;top:148px;left:107px;background:#ca8866}
+.eye{position:absolute;top:65px;width:5px;height:5px;background:#253a34;border-radius:50%;z-index:5}
+.eye1{left:34px}
+.eye2{right:34px}
+.smile{position:absolute;top:89px;left:50px;width:20px;height:9px;border-bottom:2px solid #764e42;border-radius:50%}
+.coat{position:absolute;left:28px;top:182px;width:200px;height:190px;background:#fff;border-radius:43px 43px 0 0;box-shadow:0 -2px 0 #e1e7e3 inset}
+.shirt{position:absolute;top:0;left:78px;width:48px;height:190px;background:#87b49c;clip-path:polygon(0 0,100% 0,68% 100%,33% 100%)}
+.lapel{position:absolute;top:0;width:48px;height:82px;background:#eef1ed;clip-path:polygon(0 0,100% 0,80% 100%)}
+.l1{left:49px;clip-path:polygon(0 0,100% 0,55% 100%)}
+.l2{right:50px;clip-path:polygon(0 0,100% 0,45% 100%)}
+.pocket{position:absolute;right:34px;top:74px;border:1px solid #dce5de;width:30px;height:37px;text-align:center;padding-top:8px;font-size:12px;color:#74a086;border-radius:2px}
+.arm{position:absolute;z-index:4;right:1px;top:234px;height:27px;width:95px;background:#fff;border:1px solid #e8ece8;transform:rotate(-21deg);border-radius:30px}
+.stethoscope{position:absolute;z-index:5;top:186px;left:96px;width:51px;height:74px;border:3px solid #547867;border-top:0;border-radius:0 0 25px 25px}
+.stethoscope:after{content:'';position:absolute;bottom:-9px;left:18px;width:10px;height:10px;border-radius:50%;background:#547867}
+.art-note{position:absolute;z-index:6;background:#fff;padding:12px 15px;border-radius:10px;box-shadow:0 10px 35px #49675818;display:flex;align-items:center;gap:10px;font-size:11px}
+.note-top{top:45px;left:7%;color:#446d56}
+.note-top span{font-size:18px;color:#8cae85}
+.note-bottom{bottom:28px;right:6%}
+.note-bottom .cross{display:grid;place-items:center;width:35px;height:35px;background:#e2f0e5;border-radius:9px;color:#548366}
+.note-bottom b,.note-bottom small{display:block}
+.note-bottom small{color:#8b9a92;margin-top:3px}
+.plant{position:absolute;z-index:1;bottom:0;width:95px;height:150px}
+.plant-left{left:1%}.plant-right{right:0;transform:scale(.82)}
+.plant b{position:absolute;bottom:0;left:40px;width:5px;height:90px;background:#7b9f80}
+.plant i{position:absolute;z-index:2;width:33px;height:15px;background:#84a884;border-radius:100% 0 100% 0;transform:rotate(-35deg);bottom:58px;left:13px}
+.plant i:nth-child(2){bottom:85px;left:46px;transform:scaleX(-1) rotate(-35deg)}
+.plant i:nth-child(3){bottom:112px;left:15px}.quick-links{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:12px;margin-bottom:100px}
+.quick-links>a{display:flex;align-items:center;gap:14px;padding:20px 23px;position:relative}
+.quick-links>a+a{border-left:1px solid var(--line)}
+.quick-icon{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-size:20px}
+.mint{background:#e6f1e9;color:#609177}.peach{background:#fff0e8;color:#d88669}
+.lavender{background:#eeedf6;color:#7771a5}
+.quick-links b,.quick-links small{display:block}
+.quick-links b{font-size:13px}
+.quick-links small{font-size:11px;color:#87958e;margin-top:5px}
+.quick-links i{font-style:normal;margin-left:auto;color:#88a091}
+.section{padding-bottom:105px}
+.section-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:34px}
+.section-heading h2,.appointment-copy h2{font:600 43px/1.1 Manrope,sans-serif;letter-spacing:-2px;margin:14px 0 0}
+.section-heading p{max-width:365px;color:var(--muted);font-size:13px;line-height:1.8;margin:0 0 3px}
+.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.guide-card{position:relative;overflow:hidden;min-height:270px;padding:24px;border-radius:12px}
+.fever-card{background:#f5eee4}
+.cold-card{background:#edf3ee}
+.stomach-card{background:#f5eef0}
+.card-top{display:flex;justify-content:space-between;align-items:center}
+.card-icon{width:39px;height:39px;border-radius:11px;background:#ffffffad;display:grid;place-items:center;font-size:18px}
+.tag{font-size:8px;letter-spacing:1px;color:#77867f;font-weight:700}
+.guide-card h3{font:700 21px/1.23 Manrope,sans-serif;margin:24px 0 10px;letter-spacing:-.5px}
+.guide-card p{font-size:12px;line-height:1.7;color:#718079;max-width:255px;min-height:61px}
+.guide-card>a{font-size:11px;font-weight:700;position:relative;z-index:2}
+.guide-card>a span{padding-left:7px;color:#538569}
+.card-decoration{position:absolute;right:15px;bottom:7px;font-size:78px;opacity:.23;color:#9e7050}
+.cloud{font-size:100px;right:10px;bottom:-23px;color:#8ab49b}
+.stomach-flower{color:#bb8290}
+.safety-note{margin-top:20px;background:#f7f9f6;border:1px solid #e8eee7;border-radius:10px;display:flex;gap:14px;padding:18px 20px}
+.safety-icon{flex:none;width:23px;height:23px;border-radius:50%;background:#e4efe5;color:#56826a;display:grid;place-items:center;font-weight:700;font-family:serif}
+.safety-note b{font-size:12px}
+.safety-note p{font-size:11px;line-height:1.65;color:#74837b;margin:5px 0 0}
+.hospital-section{background:#f7f8f4;padding:84px 0 88px}
+.hospital-section .section-heading{margin-bottom:27px}
+.location-bar{border:1px solid #e4e9e1;background:#fff;border-radius:10px;padding:13px 17px;display:flex;align-items:center;gap:13px;margin-bottom:20px}
+.location-pin{font-size:22px;color:#6f9a7e}
+.location-bar small,.location-bar strong{display:block}
+.location-bar small{font-size:8px;letter-spacing:1px;color:#8b9b91}
+.location-bar strong{font-size:12px;margin-top:4px}
+.location-bar>a{margin-left:auto;font-size:11px;font-weight:700;color:#4f7961}
+.location-bar>a span{margin-left:9px}
+.hospital-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.hospital-card{display:grid;grid-template-columns:39% 1fr;background:white;border:1px solid #e9ece6;border-radius:12px;overflow:hidden}
+.hospital-art{min-height:250px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.public-art{background:#e5f0e8}
+.private-art{background:#f8eae1}
+.building{position:relative;z-index:2;width:100px;height:132px;display:grid;place-items:center;background:#f8fbf6;border-radius:6px 6px 0 0;color:#74a081;font-size:31px;box-shadow:0 12px 0 #d0e1d3}
+.building:after{content:'▦';position:absolute;bottom:14px;color:#bbd1be;font-size:25px}
+.private-art .building{background:#fffaf6;color:#d69475;box-shadow:0 12px 0 #efcdbb}
+.private-art .building:after{color:#f0d4c5}
+.art-label{position:absolute;top:15px;left:14px;font-size:7px;letter-spacing:1px;font-weight:700;color:#70937b}
+.private-art .art-label{color:#bd866e}
+.hospital-art i{position:absolute;right:11px;bottom:7px;font-style:normal;font-size:54px;opacity:.18;color:#5e8b69}
+.hospital-info{padding:22px 18px}
+.hospital-type{font-size:8px;letter-spacing:1.2px;font-weight:700;color:#6a9578}
+.private-type{color:#c2866d}
+.hospital-info h3{font:700 17px Manrope,sans-serif;margin:9px 0 6px;letter-spacing:-.4px}
+.hospital-info>p{font-size:11px;color:#7c8c84;margin-bottom:17px}
+.hospital-meta{display:grid;gap:7px;color:#7d8f85;font-size:10px;padding-bottom:15px;border-bottom:1px solid #edf0eb}
+.outline-link{display:inline-block;margin-top:14px;border:1px solid #dfe8e0;border-radius:6px;padding:9px 12px;font-size:10px;font-weight:700;color:#40614e}
+.outline-link span{padding-left:12px}.directory-note{font-size:10px;line-height:1.6;color:#89958e;margin:15px 0 0}
+.appointment-section{padding-top:100px;padding-bottom:104px;display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:center}
+.appointment-copy>p{max-width:390px;color:var(--muted);font-size:13px;line-height:1.8;margin:18px 0 25px}
+.appointment-points{display:grid;gap:12px;color:#62776c;font-size:12px}
+.appointment-points b{font-size:9px;color:#92b39a;letter-spacing:1px;margin-right:12px}
+.appointment-form{border:1px solid #e7ebe5;border-radius:13px;padding:27px 30px;box-shadow:0 15px 45px #29473a0a}
+.form-head{display:flex;align-items:center;gap:13px;margin-bottom:22px}.form-icon{width:39px;height:39px;display:grid;place-items:center;background:#e7f1e8;color:#548364;border-radius:10px;font-size:23px}
+.form-head h3{font:700 17px Manrope;margin:0 0 4px}
+.form-head p{font-size:11px;color:#89968f;margin:0}
+.appointment-form label{display:block;font-size:10px;font-weight:700;color:#52685c;margin-bottom:7px}
+.appointment-form input,.appointment-form select{width:100%;height:42px;border:1px solid #e4e9e3;border-radius:6px;background:#fcfdfb;padding:0 11px;font:11px 'DM Sans';color:#54685d;margin-bottom:15px;outline:none}
+.appointment-form input:focus,.appointment-form select:focus{border-color:#9cbea4}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.submit-button{width:100%;margin-top:2px}
+.form-foot{display:block;text-align:center;color:#929e96;font-size:9px;margin-top:12px;line-height:1.5}
+footer{background:#f8f9f6;border-top:1px solid #edf0eb}
+.footer-inner{height:78px;display:flex;align-items:center;justify-content:space-between}
+.footer-inner>span,.footer-inner>a:last-child{font-size:11px;color:#78887e}
+.footer-small{padding:0 0 22px;color:#9aa59e;font-size:9px}
+
+
+@media(max-width:850px)
+{
+.page-wrap{width:calc(100% - 40px)}
+.site-header{width:calc(100% - 40px)}
+.site-header nav{gap:18px}
+.hero{gap:20px;min-height:500px}
+.hero-art{height:400px}
+.doctor-illustration{transform:scale(.85);transform-origin:bottom center}
+.hero-intro{font-size:14px}
+.appointment-section{gap:40px}
+.hospital-card{grid-template-columns:34% 1fr}
+.hospital-info{padding:18px 13px}}
+@media(max-width:640px){.page-wrap,.site-header{width:calc(100% - 36px)}
+.site-header{height:70px}
+.site-header nav{display:none}
+.brand{font-size:19px}
+.header-cta{padding:11px 13px;font-size:11px}
+.hero{grid-template-columns:1fr;padding-top:48px;gap:27px}
+.hero-copy{padding-left:3px}h1{font-size:58px}
+.hero-art{height:355px;max-width:470px;width:100%;margin:auto}
+.doctor-illustration{transform:scale(.78)}
+.quick-links{grid-template-columns:1fr;margin-bottom:72px}
+.quick-links>a{padding:14px 17px}
+.quick-links>a+a{border-left:0;border-top:1px solid var(--line)}
+.quick-icon{width:38px;height:38px}.section{padding-bottom:75px}
+.section-heading{display:block}
+.section-heading h2,.appointment-copy h2{font-size:38px}
+.section-heading p{margin-top:15px;max-width:430px}
+.guide-grid{grid-template-columns:1fr}
+.guide-card{min-height:240px}
+.guide-card p{min-height:auto;max-width:300px}
+.hospital-section{padding:66px 0}
+.hospital-grid{grid-template-columns:1fr}
+.hospital-card{grid-template-columns:37% 1fr}
+.hospital-art{min-height:225px}
+.hospital-info h3{font-size:16px}
+.location-bar{padding:12px}
+.location-bar>a{font-size:10px}
+.appointment-section{grid-template-columns:1fr;gap:28px;padding-top:75px;padding-bottom:75px}
+.appointment-form{padding:23px 19px}
+.footer-inner{height:auto;min-height:88px;flex-wrap:wrap;gap:10px;padding-block:18px}
+.footer-inner>span{order:3;width:100%}.footer-small{line-height:1.5;padding-bottom:18px}
+}
+
+/* Health guide and checkup ranges */
+.subsection-title{font:700 20px Manrope,sans-serif;letter-spacing:-.5px;margin:0 0 17px}
+.illness-grid{margin-bottom:18px}
+.illness-grid .guide-card{min-height:250px}
+.illness-grid .guide-card p{min-height:72px}
+.illness-grid .guide-card>a{font-size:10px;color:#456a55}
+.guide-caveat{font-size:11px;color:#7f8d85;margin:0 0 42px}
+.checkup-heading{display:flex;align-items:end;justify-content:space-between;margin-bottom:16px}
+.checkup-heading .subsection-title{margin:8px 0 0}
+.checkup-heading>p{max-width:430px;color:#7c8a82;font-size:11px;line-height:1.65;margin:0}
+.checkup-table-wrap{overflow-x:auto;border:1px solid #e7ebe5;border-radius:10px;margin-bottom:18px}
+.checkup-table{width:100%;border-collapse:collapse;font-size:11px;line-height:1.65;min-width:670px}
+.checkup-table th,.checkup-table td{text-align:left;vertical-align:top;padding:13px 15px;border-bottom:1px solid #e9ede7}
+.checkup-table thead{background:#f3f7f2;color:#577260;font-size:9px;text-transform:uppercase;letter-spacing:.8px}
+.checkup-table tbody th{font-size:11px;min-width:120px;color:#385648}
+.checkup-table td{color:#6c7e73}
+.checkup-table tbody tr:last-child th,.checkup-table tbody tr:last-child td{border-bottom:0}
+.safety-note{align-items:flex-start}
+.safety-note .safety-icon{font-family:'DM Sans',sans-serif;font-size:12px}
+.source-line{font-size:9px;color:#8b9990;line-height:1.8;margin:15px 0 0}
+.source-line a{color:#557a61;text-decoration:underline;text-underline-offset:2px}
+.medicine-note{margin-top:10px}
+
+@media(max-width:640px)
+{
+.illness-grid .guide-card{min-height:225px}
+.illness-grid .guide-card p{min-height:auto}
+.checkup-heading{display:block}
+.checkup-heading>p{margin-top:11px}
+.checkup-table{min-width:640px}
+.source-line{font-size:9px}
+}
